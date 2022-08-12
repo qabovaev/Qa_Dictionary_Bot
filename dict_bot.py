@@ -47,7 +47,7 @@ def message_handler(message):
 
     elif message.text == "Кто тебя создал?":
         markup = types.InlineKeyboardMarkup()
-        button1 = types.InlineKeyboardButton('Сайт-визитка', url='https://nataliahood.ru/')
+        button1 = types.InlineKeyboardButton('Сайт-визитка', url='https://qabovaev.github.io')
         markup.add(button1)
         bot.send_message(message.chat.id, 'Тебе правда интересно?☺ Переходи по ссылке!'.format(message.from_user), reply_markup=markup)
 
